@@ -33,7 +33,6 @@ def average_number():
 
 average_number()
 
-
 # Exercise 2:
 '''
 def minmax_number():
