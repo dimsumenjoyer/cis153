@@ -30,7 +30,7 @@ def average_number():
         count += 1
         average = (total / count)
 
-    print("Cumulative Number(s): " + str(total))
+    print("Cumulative Number: " + str(total))
     print("Total Count: " + str(count))
     print("Average Number: " + str(average))
     print("Done.")
