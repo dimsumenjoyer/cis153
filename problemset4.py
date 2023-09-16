@@ -14,6 +14,35 @@ def average_number():
     average = 0
     while True:
         input_string = input("Enter a number: ")
+
+        # execute while loop
+        if input_string == "done":
+            break
+            
+        try:
+            input_number = float(input_string) # convert to float
+        except ValueError:
+            print("Error: Non-numeric Input. Please enter a number.") # error
+            continue
+
+        # calculations
+        total += input_number
+        count += 1
+        average = (total / count)
+
+    print("Cumulative Number(s): " + str(total))
+    print("Total Count: " + str(count))
+    print("Average Number: " + str(average))
+    print("Done.")
+
+#average_number()
+'''
+def average_number():
+    count = 0
+    total = 0
+    average = 0
+    while True:
+        input_string = input("Enter a number: ")
         try:
             input_number = float(input_string)
     
@@ -32,6 +61,7 @@ def average_number():
                 continue
 
 average_number()
+'''
 
 # Exercise 2:
 '''
