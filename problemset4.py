@@ -22,7 +22,7 @@ def average_number():
         try:
             input_number = float(input_string) # convert to float
         except ValueError:
-            print("Error: Non-numeric Input. Please enter a number.") # error
+            print("Error: Non-numeric Input. Please enter a number.") # fail safe
             continue
 
         # calculations
@@ -64,18 +64,25 @@ average_number()
 '''
 
 # Exercise 2:
-'''
+
 def minmax_number():
+    numbers = []
     while True:
         input_string = input("Enter a number: ")
         if input_string == "done":
-            print("Done.")
             break
         try:
             input_number = float(input_string)
+            numbers.append(input_number)
         except ValueError:
-            print("Invalid input.")
+            print("Error: Invalid input. Enter a number.")
             continue
-
-minmax_number()
-'''
+    if numbers:
+        min_number = min(numbers)
+        max_number = max(numbers)
+    else:
+        print("No valid numbers.")
+    print(min_number)
+    print(max_number)
+        
+#minmax_number()
