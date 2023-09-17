@@ -4,7 +4,7 @@ Professor Michael Penta
 Problem Set 2
 9/12/2023, Due: 9/25/2023
 
-For problem set 3, I worked on exercises 1-3.
+For problem set 2, I worked on exercises 1-3.
 
 # Exercise 1 & 2:
 
