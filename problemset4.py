@@ -12,11 +12,13 @@ def average_number():
     count = 0
     total = 0
     average = 0
-    while True:
+    done = False
+    while not done:
         input_string = input("Enter a number: ")
 
         # execute while loop
         if input_string == "done":
+            done = True
             break
             
         try:
@@ -36,40 +38,16 @@ def average_number():
     print("Done.")
 
 #average_number()
-'''
-def average_number():
-    count = 0
-    total = 0
-    average = 0
-    while True:
-        input_string = input("Enter a number: ")
-        try:
-            input_number = float(input_string)
-    
-            if input_number == float:
-                total += input_number
-                count += 1
-                average += (total / count)
-            elif input_string == "done":
-                print("Cumulative Number(s): " + str(total))
-                print("Total Count: " + str(count))
-                print("Average Number: " + str(average))
-                print("Done.")
-                break
-        except input_string == float and input_string != "done":
-                print("Error: Non-Numeric Input. Please enter a number.")
-                continue
-
-average_number()
-'''
 
 # Exercise 2:
 
 def minmax_number():
     numbers = []
-    while True:
+    done = False
+    while not done:
         input_string = input("Enter a number: ")
         if input_string == "done":
+            done = True
             break
         try:
             input_number = float(input_string)
@@ -80,9 +58,9 @@ def minmax_number():
     if numbers:
         min_number = min(numbers)
         max_number = max(numbers)
+        print("Minimum Number: " + str(min_number) + ".")
+        print("Maximum Number: " + str(max_number) + ".")
     else:
-        print("No valid numbers.")
-    print(min_number)
-    print(max_number)
+        print("Error: No valid numbers.")
         
 #minmax_number()
