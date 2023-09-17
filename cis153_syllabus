@@ -1,25 +1,26 @@
-# cis153
-Programming for IT (Python) Class from NECC
+# CIS153: Programming for IT (Python)
 
 ## General Course Description
-This course's focus is on computer programming and scripting for Information Technology.  Students will learn about data types, control flow and Graphical User Interface driven applications. This course will be a diverse scripting course covering a wide range of subjects for an Information Technology professional. This course will also include some study of standard libraries and best practices for topics such as version control, and recommended styles and idioms.
+This course focuses on computer programming and scripting for Information Technology. Students will learn about data types, control flow, and Graphical User Interface (GUI) driven applications. The course covers a wide range of subjects relevant to Information Technology professionals, including standard libraries and best practices for topics such as version control, coding styles, and idioms.
 
-## Book: Python for Everybody: Exploring Data in Python 3 by by Dr. Charles Russell Severance 
+**Book:** [Python for Everybody: Exploring Data in Python 3](https://www.py4e.com/book) by Dr. Charles Russell Severance
 
-| Week | Readings                               | Due                                      | Notes                                      |
-|------|---------------------------------------|------------------------------------------|--------------------------------------------|
-| 1    | Syllabus, Blackboard, Introduction material, Getting Started, Chapter 1 | Set up your python programming environment          |        
-| 2    | variables, IO - chapter 2            |                                         |                                            |
-| 3    | Conditional Expressions Chapter 3    | Problem Set 1                           |                                            |
-| 4    | Functions Chapter 4                  | Problem Set 2                           |                                            |
-| 5    | Looping Chapter 5                    | Problem Set 3                           | Indigenous Peoples' Day, Oct 9 – College Closed |
-| 6    | Strings Chapter 6                    | Project 1                               |                                            |
-| 7    | Files Chapter 7                      | Problem Set 4                           |                                            |
-| 8    | Dictionaries and Tuples Chapter 9 and Chapter 10 | Problem Set 5               | Assessment Day, Oct 20 – No Day Classes   |
-| 9    | Regular Expressions Chapter 11       | Project 2                               |                                            |
-| 10   | Networked Programs Chapter 12         | Problem Set 6                          | Veterans Day, Nov 10 – College Closed    |
-| 11   | Using Web Services - Chapter 13      | Project 3                               | Final Project – Planning                  |
-| 12   | Thanksgiving Break                   |                                         | Thanksgiving Nov 23 & 24                 |
-| 13   | Final Project Work Week               | Final Project - Check-in               |                                            |
-| 14   | Final Project Work Week               |                                        | Last day of classes Dec 12                |
-| 15   |                                       | Final Projects Due                     |                                            |
+## Weekly Schedule
+
+| Week | Readings                                          | Due                       | Notes                                      |
+|------|--------------------------------------------------|---------------------------|--------------------------------------------|
+| 1    | Syllabus, Blackboard, Introduction Material, Getting Started, Chapter 1 | Set up your Python programming environment |        
+| 2    | Variables, Input/Output (Chapter 2)               |                           |                                            |
+| 3    | Conditional Expressions (Chapter 3)              | Problem Set 1            |                                            |
+| 4    | Functions (Chapter 4)                            | Problem Set 2            |                                            |
+| 5    | Looping (Chapter 5)                              | Problem Set 3            | Indigenous Peoples' Day, Oct 9 – College Closed |
+| 6    | Strings (Chapter 6)                              | Project 1                |                                            |
+| 7    | Files (Chapter 7)                                | Problem Set 4            |                                            |
+| 8    | Dictionaries and Tuples (Chapters 8 and 9)       | Problem Set 5            | Assessment Day, Oct 20 – No Day Classes   |
+| 9    | Regular Expressions (Chapter 10)                 | Project 2                |                                            |
+| 10   | Networked Programs (Chapter 11)                  | Problem Set 6            | Veterans Day, Nov 10 – College Closed    |
+| 11   | Using Web Services (Chapter 12) and Using Git (on Blackboard) | Project 3 | Final Project – Planning |
+| 12   | Thanksgiving Break                               |                           | Thanksgiving Nov 23 & 24                 |
+| 13   | Final Project Work Week                           | Final Project - Check-in |                                            |
+| 14   | Final Project Work Week                           |                           | Last day of classes Dec 12                |
+| 15   |                                                  | Final Projects Due       |                                            |
