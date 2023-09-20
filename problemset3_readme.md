@@ -152,10 +152,9 @@ I think that I could improve this code with the help of a tutor or a professor,
 so I'll keep the try & except conditional as an outline.
 Here's my code for this algorithm so far:
 
-def computegrade(score):
+ddef computegrade(score):
     grade = "Bad Score"
     try:
-        #score = float(input("Enter score: "))
         if 0.0 <= score <= 1.0:
             if score >= 0.9:
                 grade = "A"
@@ -167,7 +166,6 @@ def computegrade(score):
                 grade = "D"
             elif score < 0.6:
                 grade = "F"
-        #print(grade)
     except:
         pass #print("Bad Score")
     return print(grade)
