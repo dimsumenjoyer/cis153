@@ -79,7 +79,6 @@ def computepay(hours, rate):
 def computegrade(score):
     grade = "Bad Score"
     try:
-        #score = float(input("Enter score: "))
         if 0.0 <= score <= 1.0:
             if score >= 0.9:
                 grade = "A"
@@ -91,7 +90,6 @@ def computegrade(score):
                 grade = "D"
             elif score < 0.6:
                 grade = "F"
-        #print(grade)
     except:
         pass #print("Bad Score")
     return print(grade)
