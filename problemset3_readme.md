@@ -96,22 +96,21 @@ before they were technically being defined. I didn't know how to fix it, so I ju
 statement to account for non-numeric values. However, my else statement didn't work as expected. Here is my edited code:
 
 def computepay(hours, rate):
-        #hours += float(input("Enter Hours: "))
-        #rate += float(input("Enter Rate: "))
-    pay = 0
-    if hours <= 40:
-        pay += hours * rate
-        print("Pay: " + str(pay))
-    elif hours > 40:
-        pay += ((hours - 40) * 1.5) + (40 * rate)
-        pay += hours * rate
-        print("Pay: " + str(pay))
-    else:
+    try:
+        pay = 0
+        if hours <= 40:
+            pay += hours * rate
+            print("Pay: " + str(pay))
+        elif hours > 40:
+            pay += ((hours - 40) * 1.5) + (40 * rate)
+            pay += hours * rate
+            print("Pay: " + str(pay))
+    except:
         print("Error. Please enter numeric input.")
 
 computepay(40,10)
 computepay(45, 10)
-computepay(yes, yes)
+computepay("yes", "yes")
 
 # Exercise 7: Rewrite the grade program form the previous chapter using a function called "computegrade"
 that takes a score as its parameter and returns a grade as a function.
