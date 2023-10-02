@@ -1,6 +1,6 @@
 '''
 Victor Van 9/11/2023
-Problem Set 2 - Due: 9/18/2023
+Problem Set 1 - Due: 9/18/2023
 Exercises 1-5 from Problem Set 2.
 Outside Resources: I used google for the equation to convert Celsius to Fahrenheight.
 '''
