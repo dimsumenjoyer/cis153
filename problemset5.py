@@ -48,9 +48,9 @@ banana = "banana"
 
 # Chapter 6, Exercise 5:
 
-str = "X-DSPAM-Confidence: 0.8475"
-colon = str.find(":")
-uncleaned_num = str[colon + 1:]
+string = "X-DSPAM-Confidence: 0.8475"
+colon = string.find(":")
+uncleaned_num = string[colon + 1:]
 string_num = uncleaned_num.strip()
 float_num = float(string_num)
 #print(float_num)
@@ -59,6 +59,83 @@ float_num = float(string_num)
 
 # https://docs.python.org/3/library/stdtypes.html#string-methods
 
-# Chapter 7: Exercise 1:
+# Chapter 7, Exercise 1 & 3:
 
 # https://www.py4e.com/code3/mbox-short.txt
+
+def textfile():
+   done = False
+   while not done:
+      try:
+         user_input = input("Enter a file name: ") # mbox-short.txt
+         if user_input == "na na boo boo":
+            print("NA NA BOO BOO TO YOU - You have been punk'd!")
+         elif user_input == "nevermind":
+            print("Sorry.")
+            done = True
+            break
+            # https://www.py4e.com/code3/mbox-short.txt
+            # https://www.geeksforgeeks.org/with-statement-in-python/
+         with open(user_input) as textfile_obj:
+            print(textfile_obj)
+            for line in textfile_obj:
+               print(line.strip().upper())
+         done = True
+         break
+      except FileNotFoundError:
+         print("Error: File Not Found. Please try again.")
+         continue
+      return
+
+textfile()
+
+# Chapter 7, Exercise 2:
+
+def extract_average():
+   #user_input = input("Enter a file name: ")
+   user_input = "mbox-short.txt"
+   total = 0
+   iteration = 0
+   with open(user_input) as textfile_obj:
+      for line in textfile_obj:
+         if line.startswith("X-DSPAM-Confidence:"):
+            colon = line.find(":")
+            numbers = float(line[colon + 1:])
+            total += numbers
+            iteration += 1
+   average = (total/iteration)
+   print(f"Average: {average}") 
+   return
+
+#extract_average()
+
+# :(
+
+# Exercise 1:
+
+def name():
+   user_input = input("What is your given name?: ")
+   first_letter = user_input[0]
+   name_length = len(user_input)
+   last_letter = user_input[name_length-1]
+   middle_letter_value = int(name_length/2)
+   middle_letter = user_input[middle_letter_value]
+   print(f"Your name is {user_input}. The first letter is {first_letter}, middle letter {middle_letter}, and last latter {last_letter}.")
+   return
+
+#name()
+
+# Exercise 2:
+def concentration(string1, string2):
+   print(f"{string1} {string2}")
+   return
+
+#concentration("fuck", "you")
+
+# Exercise 3:
+
+# Exercise 4:
+
+# Exercise 5:
+
+# Exercise 6:
