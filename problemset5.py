@@ -132,9 +132,47 @@ def concentration(string1, string2):
 
 #concentration("fuck", "you")
 
+def name():
+   user_input = input("What is your given name?: ")
+   first_letter = user_input[0]
+   name_length = len(user_input)
+   last_letter = user_input[name_length-1]
+   middle_letter_value = int(name_length/2)
+   middle_letter = user_input[middle_letter_value]
+   print(f"Your name is {user_input}. The first letter is {first_letter}, middle letter {middle_letter}, and last latter is {last_letter}.")
+   return
+
+#name()
+
+# Exercise 2:
+def concentration(string1, string2):
+   print(f"{string1} {string2}")
+   return
+
+#concentration("fuck", "you")
+
 # Exercise 3:
+def character_count(string, character):
+  string_lower = string.lower()
+  character_lower = character.lower()
+  count = string_lower.count(character_lower)
+  print(f"There are {count}s {character} in {string}.")
+  return count 
+
+#character_count("Victor Van", "V")
 
 # Exercise 4:
+def filename():
+   user_input = input("What file do you want to open?: ")
+   file = open(user_input)
+   for name in file:
+      first_letter = name[0]
+      name_length = len(name)
+      last_letter = name[-1]
+      middle_letter_value = int(name_length//2)
+      middle_letter = name[middle_letter_value]
+      print(f"Your name is {name}. The first letter is {first_letter}, middle letter {middle_letter}, and last latter {last_letter}.")
+   return
 
 # Exercise 5:
 
