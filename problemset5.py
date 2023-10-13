@@ -199,3 +199,37 @@ def findnames():
 #findnames()
 
 # Exercise 6:
+
+def findnames():
+   user_input = input("What file do you want to open?: ") #names.md
+   done = False
+   while not done:
+      if user_input == "nevermind":
+         print("Sorry.")
+         done = True
+         break
+      try:
+         file = open(user_input)
+         for name in file:
+            print(name)
+         file.close()
+         done = True
+         break
+      except FileNotFoundError:
+         print("Error: File Not Found. Please try again.")
+         continue
+   return
+
+#findnames()
+
+# Exercise 6:
+
+def outputfile():
+   print("Note File: ")
+   user_input = input()
+   file = open("outputfile.md", "w")
+   file.write(user_input)
+   file.close()
+   return
+
+#outputfile()
