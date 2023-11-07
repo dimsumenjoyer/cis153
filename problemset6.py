@@ -4,6 +4,7 @@ CIS153: Problem Set 6
 Professor Penta
 10/23/2023, Due: 11/7/2023
 '''
+import numpy as np
 
 def mbox_file():
     with open("mbox-short.txt", "r") as file:
@@ -67,7 +68,6 @@ def from_emailaddress():
     emails = []
     email = ""
     info = []
-    most_commits = ""
     for line in file:
         if line.startswith("From ") or line.startswith("From: "):
             line = line[5:].strip().split()
@@ -78,22 +78,34 @@ def from_emailaddress():
     file.close()
     email_from = {email: emails.count(email) for email in emails}
     info = max(email_from, key = email_from.get)
+    #print(info)
     return email_from, info
 
 #print(from_emailaddress())
-# I don't know how to find the highest value in the dictionary and print out the correspending email.
-            
+
 # Chapter 10, Problem 2:
 
 
 def hour_in_emails():
     file = open("mbox-short.txt", "r")
     time = 0
+    times = []
+    hours = []
+    hours_dictionary = {}
     for line in file:
         if line.startswith("From ") or line.startswith("From: "):
             line = line[5:].strip().split()
-            time = line[5]
-            print(time) # test
+            if len(line) > 2:
+                time = line[4]
+                times.append(time)
+    for time in times:
+        hour = time[0:2]
+        hours.append(int(hour))
+    for hour in hours:
+        hours_dictionary = {hour: hours.count(hour) for hour in hours}
+    sorted_dictionary = dict(sorted(hours_dictionary.items()))
+    for stuff in sorted_dictionary.items():
+        print(stuff)
     return
-# I can't isolate time because some the lists are out of range, and I don't know how to deal with that.
+
 hour_in_emails()

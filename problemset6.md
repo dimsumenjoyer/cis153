@@ -13,7 +13,12 @@ Then you can use list[number] to isolate those elements.
 However, I had issues with finding the time in the last problem because my lines varied in length.
 The time would be the 5th spot in the list, but not all lists have the same length. 
 I don't know how to account for that, and I like to figure things out myself so I unfortunately have not finished this problem set
-to a reasonable standard.
+to a reasonable standard. 
+Edit: I figured it out, but I printed our hours in tuples which might not be what I'm exactly looking for but it's close.
+
+For chapter 10, problem 1, I did manage to fufill the requirements.
+However, my formatting is a bit weird.
+I have a dictionary inside a list, and the email with the highest value is also in the list but not in the dictionary.
 
 Professor Penta also helped me with dictionaries, for instance:
 if email not in email_directionary:
@@ -23,3 +28,4 @@ I've also used a dictionary comprehension on 79.
 Outside resources:
 https://www.w3schools.com/python/ref_dictionary_get.asp
 (Side note, I didn't know that the .get method could omit the parenthesis and still work.)
+https://realpython.com/sort-python-dictionary/
