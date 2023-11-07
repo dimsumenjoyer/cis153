@@ -92,7 +92,8 @@ def hour_in_emails():
     for line in file:
         if line.startswith("From ") or line.startswith("From: "):
             line = line[5:].strip().split()
-            print(line)
+            time = line[5]
+            print(time) # test
     return
 # I can't isolate time because some the lists are out of range, and I don't know how to deal with that.
 hour_in_emails()
