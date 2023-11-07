@@ -66,6 +66,8 @@ def from_emailaddress():
     email_from = {}
     emails = []
     email = ""
+    info = []
+    most_commits = ""
     for line in file:
         if line.startswith("From ") or line.startswith("From: "):
             line = line[5:].strip().split()
@@ -75,18 +77,22 @@ def from_emailaddress():
     #print(emails) # test
     file.close()
     email_from = {email: emails.count(email) for email in emails}
-    #print(email_from) # test
-    #email_from.reverse()
-    return email_from
+    info = max(email_from, key = email_from.get)
+    return email_from, info
 
-print(from_emailaddress())
+#print(from_emailaddress())
+# I don't know how to find the highest value in the dictionary and print out the correspending email.
             
 # Chapter 10, Problem 2:
 
-'''
+
 def hour_in_emails():
-   file = open("mbox-short.txt", "r")
-   for line in file:
-       if line.startswith("From ") or line.startswith("From: ")
+    file = open("mbox-short.txt", "r")
+    time = 0
+    for line in file:
+        if line.startswith("From ") or line.startswith("From: "):
+            line = line[5:].strip().split()
+            print(line)
     return
-'''
+# I can't isolate time because some the lists are out of range, and I don't know how to deal with that.
+hour_in_emails()
