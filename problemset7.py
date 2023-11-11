@@ -2,8 +2,8 @@
 Victor Van
 00319912
 CIS153: Problem Set 7
+Professor Penta
 11/10/2023, Due: 11/14/2023
-Note: fuck regular expressions
 '''
 
 import re
