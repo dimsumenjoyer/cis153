@@ -45,6 +45,7 @@ def average():
             total += number_in_list
     average = (total/iterations)
     print(f"Fucking Average: {average}.")
+    file.close()
     return
 
 #average()
