@@ -43,7 +43,7 @@ def average():
         if fuck_my_life is not None and fuck_my_life:
             number_in_list = int(fuck_my_life[0])
             total += number_in_list
-    average = (total/iterations)
+            average = (total/iterations)
     print(f"Fucking Average: {average}.")
     return
 
