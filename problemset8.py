@@ -6,8 +6,6 @@ Professor Penta
 11/14/2023, Due: 11/19/2023
 '''
 
-import socket
-
 # Chapter 12, Exercise 1:
 
 import socket
