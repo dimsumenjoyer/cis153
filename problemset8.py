@@ -39,7 +39,7 @@ def display():
     input_url = "http://www.example.com" #"https://www.scientificamerican.com/article/long-covid-now-looks-like-a-neurological-disease-helping-doctors-to-focus-treatments1/" #input("Enter a URL: ")
     try:
         host = input_url.split('/')[2]
-        print(f"Host: {host}.") # test
+        print(f"Host: {host}") # test
         mysock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         mysock.connect((host, 80))
         cmd = ("GET " + input_url + " HTTP/1.0\r\n\r\n").encode()
